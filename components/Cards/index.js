@@ -37,7 +37,6 @@ axios
     response.data.articles.technology.forEach(item => {
         cardsCont.appendChild(cardCreator(item));
     })
-
   })
 
 cardsCont = document.querySelector('.cards-container');
