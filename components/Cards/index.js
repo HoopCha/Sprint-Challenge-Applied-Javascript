@@ -22,21 +22,22 @@ axios
   .get("https://lambda-times-backend.herokuapp.com/articles")
   .then(response => {
     console.log(response)
-    response.data.articles.bootstrap.forEach((item)=>{
+    response.data.articles.bootstrap.forEach(item => {
         cardsCont.appendChild(cardCreator(item));
     })
-    response.data.articles.javascript.forEach((item)=>{
-    cardsCont.appendChild(cardCreator(item));
+    response.data.articles.javascript.forEach(item => {
+        cardsCont.appendChild(cardCreator(item));
     })
-    response.data.articles.jquery.forEach((item)=>{
-    cardsCont.appendChild(cardCreator(item));
+    response.data.articles.jquery.forEach(item => {
+        cardsCont.appendChild(cardCreator(item));
     })
-    response.data.articles.node.forEach((item)=>{
-    cardsCont.appendChild(cardCreator(item));
+    response.data.articles.node.forEach(item => {
+        cardsCont.appendChild(cardCreator(item));
     })
-    response.data.articles.technology.forEach((item)=>{
-    cardsCont.appendChild(cardCreator(item));
+    response.data.articles.technology.forEach(item => {
+        cardsCont.appendChild(cardCreator(item));
     })
+
   })
 
 cardsCont = document.querySelector('.cards-container');
